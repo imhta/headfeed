@@ -21,7 +21,7 @@
 		margin: 10px;
 	}
 </style>
-<h1>Top 20 headlines</h1>
+<h1>headfeed</h1>
 {#each data as news, i}
 <a href="{news.url}">{i + 1}. &nbsp;{news.title}</a>
 {/each}
