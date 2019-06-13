@@ -12,8 +12,17 @@
 			data = [...data, jsonNews]; 
 		});
 	});
-
-	function handleClick(event) {
+	function forward() {
+		if(index < data.length) {
+			index++;
+		}
+	}
+	function backward() {
+		if(index > 0) {
+			index--;
+		}
+	}
+	function handleKey(event) {
 		if(event.keyCode === 39) {
 			if(index < data.length) {
 				index++;
@@ -45,7 +54,7 @@
 {#if data.length}
 <h2><a href="{data[index].url}" >{index + 1}. &nbsp;{data[index].title}</a></h2>
 <div class="btn-wrapper">
-<button>Backward</button><button>Forward</button>
+<button on:click={backward}>Backward</button><button on:click={forward}>Forward</button>
 </div>
 {:else} 
 <h2>loading..</h2>
