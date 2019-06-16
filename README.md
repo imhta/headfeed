@@ -1,5 +1,5 @@
 
-# headfeed 
+# headfeed (Svelte 3 Version)
 
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
