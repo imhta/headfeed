@@ -12,3 +12,7 @@ storage.rules
 functions
 firebase-debug.log
 .firebase
+
+#config
+
+config.js

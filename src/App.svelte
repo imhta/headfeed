@@ -1,14 +1,14 @@
 <script>
   import { onMount } from "svelte";
   import Card from "./Card.svelte";
-
+  import config from "../config.js";
   let data = [];
 
   onMount(async function() {
     getTopFromNewsAPI();
   });
   async function getTopFromNewsAPI() {
-    const api = "f4e25419df6f4a1aac2faaaf3ae149ff";
+    const api = config.MY_API_KEY;
     const res = await fetch(
       `https://newsapi.org/v2/top-headlines?country=IN&category=technology&apiKey=${api}`
     );
