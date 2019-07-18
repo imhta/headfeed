@@ -1,6 +1,6 @@
 
-# headfeed (Svelte 3 Version)
-
+# headfeed
+headfeed is news application built with news api and svelte 3.
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
