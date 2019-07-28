@@ -23,16 +23,30 @@
 </script>
 
 <style>
-  :global(h1) {
+  :global(h2) {
     text-align: center;
   }
-  nav h1 {
-    font-size: 40px;
+  nav h2 {
+    font-size: 30px;
   }
-  h1 span {
+  h2 span {
     color: #ff9900;
   }
-
+  
+  .btn-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  nav button{
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+  }
+  button.selected{
+    background-color: #ff9900;
+    color: black;
+  }
   main {
     display: flex;
     height: 75%;
@@ -41,7 +55,14 @@
 </style>
 
 <nav>
-  <h1>head<span>feed</span></h1>
+  <h2>head<span>feed</span></h2>
+  <div class="btn-wrapper">
+  <button class="selected">India</button>
+  <button>US</button>
+  <button>Business</button>
+  <button>Technology</button>
+  </div>
+
 </nav>
 
 <main>
